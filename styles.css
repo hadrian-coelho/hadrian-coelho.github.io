@@ -5,7 +5,8 @@
   font-family: 'Arial', sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -28,7 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #1E1E1E;
-  box-shadow: 0 4px 25px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
   max-width: 95%;
 }
 
@@ -115,37 +116,50 @@ body {
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 295px; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 295px;
+  }
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% {
+    border-color: transparent;
+  }
 }
 
 @media (max-width: 768px) {
   body {
     padding: 30px;
   }
+
   .hero-box {
     padding: 30px;
   }
+
   .hero-content {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
+
   .hero-text {
     align-items: center;
     text-align: center;
   }
+
   .hero-img img {
     width: 150px;
     height: 150px;
   }
+
   .hero-text p {
     max-width: 100%;
   }
+
   .socials {
     justify-content: center;
   }
@@ -155,4 +169,13 @@ body {
   background-color: purple;
   color: white;
   text-shadow: 1px 1px 2px black;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
