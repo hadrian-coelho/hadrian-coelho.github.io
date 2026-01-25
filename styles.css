@@ -189,3 +189,34 @@ body {
   text-align: center;
   padding: 40px 0;
 }
+
+.gradient-text {
+  background: linear-gradient(135deg, #9B59B6, #C77DFF, #6A1B9A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    270deg,
+    #9B59B6,
+    #C77DFF,
+    #6A1B9A,
+    #9B59B6
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 6s ease infinite;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
